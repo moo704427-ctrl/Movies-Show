@@ -2006,3 +2006,185 @@ footer {
         margin-top: 170px;
     }
 }
+
+/* Subscription Page Style */
+.features {
+    margin-top: 80px;
+
+    @media (min-width: 1200px) {
+        margin-top: 120px;
+    }
+
+    @media (min-width: 1400px) {
+        margin-top: 150px;
+    }
+
+    .container {
+        .about-features {
+            h2 {  
+                font-weight: 700;  
+                font-size: 24px;  
+                line-height: 150%;
+                
+                @media (min-width: 1200px) {  
+                    font-size: 38px;  
+                }  
+                
+                @media (min-width: 1400px) {  
+                    font-size: 48px;
+                }  
+            } 
+            
+            p {
+                color: var(--color-grey-60);
+                font-weight: 400;
+                font-size: 14px;  
+                line-height: 150%;  
+
+                @media (min-width: 1200px) {  
+                    font-size: 16px;  
+                }  
+
+                @media (min-width: 1400px) {  
+                    font-size: 18px;
+                } 
+            }
+        }
+        
+        .features-details {
+            margin-top: 40px;
+
+            @media (min-width: 1200px) {
+                margin-top: 60px;
+            }
+
+            @media (min-width: 1400px) {
+                margin-top: 80px;
+            }
+
+            .subscription-plan {
+                background-color: var(--color-black-06);
+                border: 1px solid var(--color-black-15);
+                border-radius: 8px;
+                margin-bottom: 20px;
+
+                @media (min-width: 768px) {
+                    margin-bottom: 40px;
+                    border-radius: 10px;
+                    padding: 10px !important;
+                }
+
+                span {
+                    width: 100%;
+                    color: var(--color-grey-60);
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 150%;
+                    padding: 12px 20px;
+                    cursor: pointer;
+                    text-align: center;
+
+                    @media (min-width: 768px) {
+                        font-size: 18px;
+                        padding: 14px 24px;
+                    }
+                }
+
+                span.active {
+                    background-color: var(--color-black-12);
+                    color: white;
+                    border-radius: 6px;
+
+                    @media (min-width: 768px) {
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .subscription-plan-details {
+                background-color: var(--color-black-06);
+                border: 1px solid var(--color-black-15);
+                border-radius: 12px;
+
+                .row {
+                    h3, p {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: var(--color-grey-60);
+    
+                        @media (min-width: 768px) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .subscription-plan-details-table {
+                border: 1px solid var(--color-black-15);
+                border-radius: 10px;
+                overflow: hidden;
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    table-layout: fixed;
+    
+                    thead, tbody {
+                        background-color: var(--color-black-06);
+                        
+                        tr {
+                            border-bottom: 1px solid var(--color-black-15);
+                        }
+
+                        th, td {
+                            flex-grow: 1;
+                            text-align: start;
+                            padding: 24px;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 150%;
+                            overflow-wrap: break-word;
+
+                            @media (min-width: 1400px) {
+                                padding: 30px;
+                                font-size: 20px;
+                            }
+    
+                            .popular {
+                                margin-left: 8px;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 150%;
+                                padding: 6px;
+                                border-radius: 2px;
+                                background-color: var(--color-red-45);
+
+                                @media (min-width: 1400px) {
+                                    padding: 6px 10px;
+                                }
+                            }
+                        }
+    
+                        .basic, .standard, .premium {
+                            border-left: 1px solid var(--color-black-15);
+                        }
+                    }
+
+                    tbody {
+                        background-color: transparent;
+
+                        td {
+                            color: var(--color-grey-60);
+                            font-size: 16px;
+
+                            @media (min-width: 1400px) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
